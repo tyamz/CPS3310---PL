@@ -12,9 +12,9 @@ a. `abcd` - √
   - 3a. `abcd`
 
 b. `acccbd` - X // You cannot produce a `b` following `c`
-  1a. `a <S> c <B>`
-  2a. `ac <A> c <B>`
-  2b. `accc <B>` // Dead end; can't produce a `b` from <B>
+  - 1a. `a <S> c <B>`
+  - 2a. `ac <A> c <B>`
+  - 2b. `accc <B>` // Dead end; can't produce a `b` from <B>
 
 c. `acccbcc` - X
 
