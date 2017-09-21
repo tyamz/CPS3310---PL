@@ -1,7 +1,7 @@
-# Week 3 - Lecture 5 - September 21, 2017
+# Week 3 - Lecture 6 - September 21, 2017
 ## Examples
 ### 3.12 Consider the following grammar:
-1. <S> -> a <S> c <B> | <A> | b
+1. `<S> -> a <S> c <B> | <A> | b`
 2. <A> -> c <A> | c
 3. <B> -> d | <A>
 
@@ -21,3 +21,5 @@ c. acccbcc - X
 d. acd - X // Requires at least 2 `c`'s
 
 e. accc - √
+
+###
