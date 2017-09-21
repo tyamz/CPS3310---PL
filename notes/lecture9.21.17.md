@@ -21,5 +21,3 @@ c. `acccbcc` - X
 d. `acd` - X // Requires at least 2 `c`'s
 
 e. `accc` - √
-
-###
