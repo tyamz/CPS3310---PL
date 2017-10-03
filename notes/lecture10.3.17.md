@@ -25,4 +25,4 @@
 
 ### State diagram
   - A naïve state diagram would have a transition from every state on every character in the source language - such a diagram would be very large!
-![../images/wk5l9fig1.png](test)
+![test](../images/wk5l9fig1.png)
