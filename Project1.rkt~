@@ -1,0 +1,18 @@
+#lang racket
+
+(define sumlist
+  (lambda (lst)
+    (if (empty? lst)
+        0
+        (+ (car lst) (sumlist (cdr lst))))))
+
+(define (make-seq-list x y)
+  (if (>= x y)
+      (if (= x y) (cons y empty) #f)(cons x (make-seq-list (+ x 1) y))))
+
+(define (make-whole-list x) (make-seq-list 1 x))
+
+(define (find-ith-element lst x)
+  (for ([i (length lst)])
+    (if (= i x)
+        (list-ref i))))
