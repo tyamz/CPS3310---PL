@@ -37,11 +37,11 @@
     - A set of _productions_
 
 - Expression grammar with presedence and associativity
-  1. `expr -> term | expr add_op term`
-  2. `term -> factor | term mult_op term`
-  3. `factor -> id | number | - factor | ( expr )`
-  4. `add_op -> + | -`
-  5. `mult_op -> * | /`
+1. `expr -> term | expr add_op term`
+2. `term -> factor | term mult_op term`
+3. `factor -> id | number | - factor | ( expr )`
+4. `add_op -> + | -`
+5. `mult_op -> * | /`
 
 - Parse tree for expression grammar (with precedence) for `3 + 4 * 5`
 
@@ -86,3 +86,8 @@
     identifier | int const
     | real const | comment | symbol
     | ...
+
+## An Overview of Compilation
+- Parsing is recognition of a context-free language, e.g., via PDA
+  - Parsing discovers the "context free" structure of the program
+  - Informally, it finds the structure you can describe with syntax diagrams (the "circles and arrows" in a Pascal manual)
