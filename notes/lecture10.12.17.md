@@ -36,6 +36,7 @@
 ## Example:
 ![Figure 1: Parse Tree](../images/wk6l12fig1.png)
 **_A better way to look at this parse tree would be..._**
+![Figure 2: A better way to visualize the same parse tree.](../images/wk6l12fig2.png)
 
 *Phrases*: `E + T * id`, `T * id`, `id`
   - Leaves of the parse tree copy the sentential form `E + T * id`.
