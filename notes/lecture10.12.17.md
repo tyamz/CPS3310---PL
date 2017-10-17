@@ -104,9 +104,7 @@
   - Let G be a CFG -> convert to CNF.
 
     S -> ASA | aB
-
     A -> B | S
-    
     B -> b | ε
 
 ### CFG -> CNF:
