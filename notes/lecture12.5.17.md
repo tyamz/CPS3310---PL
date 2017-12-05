@@ -145,7 +145,7 @@
     end
 
 - Run: IRB
--    c = C.new
+-     c = C.new
          -> c.m1
          -> hi
          -> c.m1.m2
