@@ -92,10 +92,10 @@
 - m2 -> dynamically typed
 - Run: IRB
 -     IRB -> load "classes_object.rb"
-     IRB -> A.new
-         -> a = A.new
-         -> 34
-         -> a.m2(34)
+      IRB -> A.new
+          -> a = A.new
+          -> 34
+          -> a.m2(34)
 
 ### Example 2:
 
