@@ -115,8 +115,10 @@
   - In this code, a method has been called in a method.
 - Run: IRB
 
+
     IRB -> load "classes_object.rb"
         -> a = A.new
+
 
 -> b = B.new
 -> b.m1
