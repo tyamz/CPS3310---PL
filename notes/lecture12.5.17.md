@@ -23,6 +23,13 @@
     - The reason is: the code itself can free variables
     - (variables that are not bound inside the code so they need to be bound by some outer environment ∴ the closure carries with it the environment that provides all those bindings. A closure overall is "closed" -> it has everything it needs to produce a function given a function argument).
 
+# The Rules
+- all values (results) are objects
+  1. Objects communicate with each other and we use them by calling their methods.
+  2. Methods are like functions, but they belong to objects.
+  3. Each object has a private state.
+  4. Each object has a class - the class determines the objects behavior. The class defines the bodies of the methods that then belong to the object. (The class contains method definitions.)
+
 # Ruby
 - allows us to discuss some of the core concepts in OOP.
 - contrast between functional programming vs. OOP.
@@ -66,7 +73,7 @@
 
 - class name must start with a capital (i.e. `class Name`)
 
-### Example:
+### Example 1:
 
     class A
         def m1
@@ -91,9 +98,32 @@
         -> 34
         -> a.m2(34)
 
-# The Rules
-- all values (results) are objects
-  1. Objects communicate with each other and we use them by calling their methods.
-  2. Methods are like functions, but they belong to objects.
-  3. Each object has a private state.
-  4. Each object has a class - the class determines the objects behavior. The class defines the bodies of the methods that then belong to the object. (The class contains method definitions.)
+### Example 2:
+
+    class B
+        def m1
+            4
+        end
+        def m3 x
+            x.abs * 2 + self.m1
+        end
+    end
+
+- `x.abs` -> absolute value method
+- Special word
+  - "this object" - myself.
+  - In this code, a method has been called in a method.
+- Run: IRB
+
+    IRB -> load "classes_object.rb"
+        -> a = A.new
+        -> b = B.new
+        -> b.m1
+        -> 4
+        -> b.m2
+        -> undefined("m2 not found in B")
+        -> a = A.new
+        -> a.m3
+        -> undefined("m3 not found in A")
+        -> b.m3 5
+        -> 14 (5 * 2) + 4
