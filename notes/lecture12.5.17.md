@@ -116,8 +116,8 @@
 - Run: IRB
 
     IRB -> load "classes_object.rb"
-    
--> a = A.new
+        -> a = A.new
+
 -> b = B.new
 -> b.m1
 -> 4
