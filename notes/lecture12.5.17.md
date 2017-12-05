@@ -116,10 +116,11 @@
 - Run: IRB
 
     IRB -> load "classes_object.rb"
-        -> a = A.new
-        -> b = B.new
-        -> b.m1
-        -> 4
+    
+-> a = A.new
+-> b = B.new
+-> b.m1
+-> 4
         -> b.m2
         -> undefined("m2 not found in B")
         -> a = A.new
