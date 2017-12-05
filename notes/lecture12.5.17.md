@@ -152,3 +152,21 @@
          -> hi bye
          -> ((c.m1).m2).m3.m3.m1.m1.m3
          -> hi bye...hi hi
+
+- Not a language feature
+- since (c.m1) returned an object can call m2 method.
+- Important -> classes define new operations on methods for calling those methods (such as self)
+
+### Objects have state
+- an object's state persists
+  - can grow and change after object is created
+- state only directly accessible from object's methods
+  - can read, write & extend state
+  - effects will persist for next method call
+
+- State consists of instance:
+  - variables (known as fields)
+    - syntax: starts w/ @
+    - "spring into being w/ assignment"
+      - `@foo`, `@for`
+      - use one not in a state not an error -> gives a nul object
