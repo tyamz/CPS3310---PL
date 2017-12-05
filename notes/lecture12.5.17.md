@@ -127,3 +127,9 @@
         -> undefined("m3 not found in A")
         -> b.m3 5
         -> 14 (5 * 2) + 4
+
+### Example 3 (self example):
+
+    class C
+        def m1
+            print "hi"
