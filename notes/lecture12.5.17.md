@@ -50,6 +50,19 @@
 | Functional | Racket                         | SML              |
 | OOP        | Ruby (No need to discuss types | Java             |
 
+- Ruby is more extreme as OOP.
+- Ruby only has private states & all we have in language are objects.
+
+## How can we define a class in Ruby?
+
+    class Name
+        definition method_name1 method_args1
+            expression1
+        end
+        definition method_name2 method_args2
+           expression2
+        end
+    end
 
 # The Rules
 - all values (results) are objects
