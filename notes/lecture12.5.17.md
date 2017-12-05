@@ -114,18 +114,18 @@
   - In this code, a method has been called in a method.
 
 - Run: IRB
-- IRB -> load "classes_object.rb"
--     -> a = A.new
--     -> b = B.new
--     -> b.m1
--     -> 4
--     -> b.m2
--     -> undefined("m2 not found in B")
--     -> a = A.new
--     -> a.m3
--     -> undefined("m3 not found in A")
--     -> b.m3 5
--     -> 14 (5 * 2) + 4
+-     IRB -> load "classes_object.rb"
+        -> a = A.new
+        -> b = B.new
+        -> b.m1
+        -> 4
+        -> b.m2
+        -> undefined("m2 not found in B")
+        -> a = A.new
+        -> a.m3
+        -> undefined("m3 not found in A")
+        -> b.m3 5
+        -> 14 (5 * 2) + 4
 
 ### Example 3 (self example):
 
