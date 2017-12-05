@@ -56,13 +56,40 @@
 ## How can we define a class in Ruby?
 
     class Name
-        definition method_name1 method_args1
+        def method_name1 method_args1
             expression1
         end
-        definition method_name2 method_args2
+        def method_name2 method_args2
            expression2
         end
     end
+
+- class name must start with a capital (i.e. `class Name`)
+
+### Example:
+
+    class A
+        def m1
+            34
+        end
+        def m2(x,y)
+            z = 7
+            if x > y
+                false
+            else
+                x + y * z
+            end
+        end
+    end
+
+- m2 -> dynamically typed
+- Run: IRB
+
+    IRB -> load "classes_object.rb"
+    IRB -> A.new
+        -> a = A.new
+        -> 34
+        -> a.m2(34)
 
 # The Rules
 - all values (results) are objects
